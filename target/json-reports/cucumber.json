@@ -1,1 +1,97 @@
-[]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 485100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 24299,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.searchIphone()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "create a country",
+        "description": "",
+        "id": "read-countries;create-a-country;create-country;2",
+        "after": [
+          {
+            "result": {
+              "duration": 29100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2947296899,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user sets the response using api end point \"https://www.gmibank.com/api/tp-countries\" and creates country using \"name\" and \"France\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-countries\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"name\"",
+                  "offset": 112
+                },
+                {
+                  "val": "\"France\"",
+                  "offset": 123
+                }
+              ],
+              "location": "CountryApiSteps.user_sets_the_response_using_api_end_point_and_creates_country_using_and(String,String,String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CountryReader"
+          },
+          {
+            "name": "@CreateCountry"
+          }
+        ]
+      }
+    ],
+    "name": "Read countries",
+    "description": "",
+    "id": "read-countries",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\CountryApi.feature",
+    "tags": [
+      {
+        "name": "@CountryReader",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

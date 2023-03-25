@@ -9,5 +9,3 @@
         Given manipulate all customers' data
         And user sets the data in correspondent files
         Then user validates all data
-
-

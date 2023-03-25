@@ -1,10 +1,12 @@
 package gmibank.step_defs;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import gmibank.pojos.Country;
 import gmibank.utilities.DatabaseUtility;
 import gmibank.utilities.ReadTxt;
+import gmibank.utilities.WriteToTxt;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,7 +83,18 @@ public class DatabasePostgresSteps {
     }
 
 
+    @And("user saves DB Customer info to correspondent file")
+    public void userSavesDBCustomerInfoToCorrespondentFile() {
 
+    }
 
+    @Then("user validates all customers db have")
+    public void userValidatesAllCustomersDbHave() {
+    }
 
+    @Given("user provides query as {string} and {string}")
+    public void userProvidesQueryAsAnd(String arg0, String arg1) {
+        List<Object> list = DatabaseUtility.getColumnData(arg0,arg1);
+        System.out.println(list);
+    }
 }

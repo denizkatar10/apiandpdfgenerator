@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" time="0"/>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="2.949794">
+<testcase classname="Read countries" name="create a country" time="2.949794">
+<system-out><![CDATA[Given user sets the response using api end point "https://www.gmibank.com/api/tp-countries" and creates country using "name" and "France".passed
+]]></system-out>
+</testcase>
+</testsuite>
